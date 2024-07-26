@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify- your favourite music</title>
+    <link rel="stylsheet" src="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+body{
+    background-color:rgb(100, 98, 98);
+
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+nav{
+   font-family: 'ubantu',sans-serif;
+}
+
+nav ul/* unorder list*/{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+
+}
+nav ul li/* list of unorederlist*/
+{
+    padding:0 12px;
+
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+
+}
+.brand/*class of img*/
+{
+   display: flex;
+   align-items: center;
+   font-weight: bolder;
+   font-size: 1.2krem;
+}
+.container
+{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'ubantu',sans-serif;
+    display: flex;
+    width:70%;
+    margin:23px auto;
+    border-radius: 12px;
+    padding: 34px;
+}
+.bottom
+{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color:white;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    
+}
+.icons
+{
+    margin-top: 12px;
+}
+.icons i {
+    cursor: pointer;
+}
+#mybar
+{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songitemcont{
+    margin-top: 30px;
+}
+.songitem
+{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 8px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+
+}
+.songitem img{
+    width: 43px;
+    margin: 0 12px ;
+    border-radius: 30px;
+}
+.timestamp
+{
+    margin:0 15px;
+}
+.timestamp i {
+    cursor: pointer;
+
+}
+.songinfo
+{
+    position:absolute ;
+    left:10vw;
+    font-family: 'Varela Round',sans-serif;
+}
+.songinfo img
+{
+    opacity: 0;
+    transition:opacity 0.4s ease-in;
+}
+
+
+    </style>
+</head>
+    <nav>
+        <ul>
+            <li class="brand" ><img src="logo.png" alt="Spotify">Spotify</img>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+
+            <div class="songlis">
+                <big>Best of nsc - no copyright sound</big>
+                <div class="songitemcont">
+                    <div class="songitem">
+                <img alt="1">
+                <span class="songname">let me love you  </span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songitemplay fa-play-circle"></i></span>  
+            </span>
+                </div>
+                <div class="songitem">
+                    
+                    <img alt="1">
+                    <span class="songname">let me love you  </span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songitemplay fa-play-circle"></i></span>  
+                </span>
+                    </div>
+                <div class="songitem">
+                        <img alt="1">
+                        <span class="songname">let me love you  </span>
+                        <span class="songlistplay"><span class="timestamp">05:34 <i id="2" class="far songitemplay fa-play-circle"></i></span>  
+                    </span>
+                        </div>
+                <div class="songitem">
+                            <img  alt="1">
+                            <span class="songname">let me love you  </span>
+                            <span class="songlistplay"><span class="timestamp"><span >05:34 <i id="3" class="far songitemplay fa-play-circle"></i ></span>
+                            </div>
+                            <div class="songitem">
+                                <img alt="1">
+                                <span class="songname">let me love you  </span>
+                                <span class="songlistplay"><span class="timestamp"><span >05:34 <i id="4" class="far songitemplay fa-play-circle"></i></span>  
+                            </span>
+                                </div>
+                                <div class="songitem">
+                                    <img alt="1">
+                                    <span class="songname" >let me love you  </span>
+                                    <span class="songlistplay"><span class="timestamp">05:34 <i id ="5" class="far songitemplay fa-play-circle"></i ></span>  
+                                </span>
+                                    </div>
+                                    <div class="songitem">
+                                        <img alt="1">
+                                        <span class="songname">let me love you  </span>
+                                        <span class="songlistplay"><span class="timestamp">05:34 <i id="6" class="far songitemplay fa-play-circle"></i ></span>  
+                                    </span>
+                                        </div>
+                                        <div class="songitem">
+                                            <img  alt="1">
+                                            <span class="songname">let me love you  </span>
+                                            <span class="songlistplay"><span class="timestamp">05:34 <i id="7" class="far songitemplay fa-play-circle"></i ></span>  
+                                        </span>
+                                            </div>
+                                            <div class="songitem">
+                                                <img alt="1">
+                                                <span class="songname">let me love you  </span>
+                                                <span class="songlistplay"><span class="timestamp">05:34 <i id="8" class="far songitemplay fa-play-circle"></i ></span>  
+                                            </span>
+                                                </div>
+                                                <div class="songitem">
+                                                    <img alt="1">
+                                                    <span class="songname">let me love you  </span>
+                                                    <span class="songlistplay"><span class="timestamp">05:34 <i id="9" class="far songitemplay fa-play-circle"></i ></span>  
+                                                </span>
+                                                    </div>                   
+                 </div>
+            </div>
+            <div class="songb"></div>
+            <img src="bg.jpg" alt="girl" width="600" height="400"></img>
+
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="mybar" min="0" value="0" max="100">
+        <div class="icons">
+           <!--fontawesome icons-->
+           <i class="fa fa-2x fa-step-backward"id="previous"></i>
+           <i class="fa fa-2x fa-play-circle" id="masterPlay"></i >
+           <i class="fa fa-2x fa-step-forward" id="next"></i >
+    </div>
+    <div class="songinfo">
+        <img src="playing.gif" width="42px"alt="" id="gif"><span id="mastersongname">salam-e-ishq</span>
+    </div>
+    </div>
+    <script type='text/javascript' src="script.js">
+        
+
+    </script>
+    
+</body>
+</html>

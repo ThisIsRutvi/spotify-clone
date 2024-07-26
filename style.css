@@ -1,0 +1,23 @@
+body{
+    background-color:antiquewhite;
+
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+nav{
+   font-family: 'ubantu',sans-serif;
+}
+
+nav ul{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    height: 89px;
+    background-color:black;
+}
+.brand img{
+    width: 44px;
+}
