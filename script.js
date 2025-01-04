@@ -6,7 +6,6 @@ console.log("welcome");
         let mybar= document.getElementById('mybar');
         let gif= document.getElementById('gif');
         let mastersongname= document.getElementById('mastersongname');
-
         let songitems = Array.from(document.getElementsByClassName('songitem'));
 
         let songs = [
@@ -73,7 +72,7 @@ Array.from(document.getElementsByClassName('songitemplay')).forEach((element)=>{
     songIndex =  parseInt(e.target.id);
     e.target.classList.remove('fa-play-circle');
     e.target.classList.add('fa-pause-circle');
-    audioElement.src='songs/${songIndex+1}.mp3';
+    audioElement.src=`songs/${songIndex+1}.mp3`;
     mastersongname.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -91,7 +90,7 @@ document.getElementById('next').addEventListener('click',()=>{
       else{
         songIndex += 1;
       }
-    audioElement.src='songs/${songIndex+1}.mp3';
+    audioElement.src=`songs/${songIndex+1}.mp3`;
     mastersongname.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -101,12 +100,12 @@ document.getElementById('next').addEventListener('click',()=>{
 document.getElementById('previous').addEventListener('click',()=>{
     if(songIndex<=0)
     {
-      songIndex = 0;
+      songIndex = songs.length-1;
     }
     else{
       songIndex -= 1;
     }
-  audioElement.src='songs/${songIndex+1}.mp3';
+  audioElement.src=`songs/${songIndex+1}.mp3`;
   mastersongname.innerText = songs[songIndex].songName;
   audioElement.currentTime = 0;
   audioElement.play();
